@@ -19,9 +19,9 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: stable          # 👈 latest stable channel
-          flutter-version: 3.24.0  # 👈 optional, pin exact version for consistency
-          cache: true              # 👈 enable caching for faster builds
+          channel: stable
+          flutter-version: 3.35.4  # 👈 use your local version
+          cache: true
 
       # Step 3: Install dependencies inside subfolder
       - name: Install dependencies

@@ -3,8 +3,6 @@ import 'package:graph_ql_demos/models/country_model.dart';
 import 'package:graph_ql_demos/repositories/country_repository.dart';
 import 'package:graph_ql_demos/services/country_service.dart';
 
-import '../../models/country_model.dart';
-
 class CountryScreen extends StatefulWidget {
   const CountryScreen({super.key});
 
@@ -43,7 +41,10 @@ class _CountryScreenState extends State<CountryScreen> {
                 return ListTile(
                   title: Text(country.name),
                   subtitle: Text(country.continent.name),
-                  leading: Text(country.emoji, style: const TextStyle(fontSize: 24)),
+                  leading: Text(
+                    country.emoji,
+                    style: const TextStyle(fontSize: 24),
+                  ),
                   trailing: Text(country.code),
                 );
               },
